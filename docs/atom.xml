@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Refugio</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://xv1r.cn/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://xv1r.cn/"/>
   <updated>2022-08-07T08:46:17.441Z</updated>
-  <id>http://example.com/</id>
+  <id>https://xv1r.cn/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Xavier Wah</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/08/07/hello-world/"/>
-    <id>http://example.com/2022/08/07/hello-world/</id>
+    <link href="https://xv1r.cn/f72ad75a4dcb/"/>
+    <id>https://xv1r.cn/f72ad75a4dcb/</id>
     <published>2022-08-07T08:46:17.441Z</published>
     <updated>2022-08-07T08:46:17.441Z</updated>
     
