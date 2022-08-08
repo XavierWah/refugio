@@ -1,0 +1,9 @@
+extends partial/base
+
+block container
+    include mixins/post
+    +postlist_archive()
+
+block pagination
+    include mixins/paginator
+    +paginator_index()

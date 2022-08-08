@@ -1,0 +1,12 @@
+a.logo-link(href=url_for())
+    img(src=url_for(theme.logo) alt="logo")
+ul.nav.nav-list
+    each value, key in theme.navlink.internal
+        li.nav-list-item
+            a.nav-list-link(class={active: "/"+page.current_url === value} href=url_for(value) target="_self")
+                != key.toUpperCase()
+    each value, key in theme.navlink.external
+        li.nav-list-item
+            a.nav-list-link(class={active: "/"+page.current_url === value} href=url_for(value) target="_blank")
+                != key.toUpperCase()
+                i(class="link-icon fa-solid fa-arrow-up-right-from-square")

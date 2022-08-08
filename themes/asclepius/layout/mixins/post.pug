@@ -1,0 +1,40 @@
+mixin post_info(item)
+    .post-info!= full_date(item.date, 'll')
+    if item.from && (is_home() || is_post())
+        a.post-from(href=item.from target="_blank" title=item.from)!= __('translated')
+
+mixin postlist_index()
+    ul.index.post-list
+        - page.posts.each(function (item) {
+            li.post-list-item
+                article.post-block
+                    h2.post-title
+                        a.post-title-link(href= url_for(item.path))!= item.title
+                    +post_info(item)
+                    .post-content!= item.excerpt
+                    a.read-more(href= url_for(item.path))!= __('more')
+        - })
+
+mixin postlist_archive()
+    .archive
+        - var cache = [0, 0];
+        - page.posts.each(function (item) {
+            - var itemyear = date(item.date, 'YYYY') - 0;
+            - var itemmonth = date(item.date, 'MM') - 0;
+            if !(itemyear === cache[0])
+                h2.archive-year!= date(item.date, 'YYYY')
+                - cache[0] = itemyear
+            if !(itemmonth === cache[1])
+                h3.archive-month!= date(item.date, 'MMMM')
+                - cache[1] = itemmonth
+            .post-item
+                +post_info(item)
+                a.post-title-link(href= url_for(item.path))!= item.title
+        - })
+
+mixin post(item)
+    .post
+        article.post-block
+            h1.post-title!= item.title
+            +post_info(item)
+            .post-content!= item.content

@@ -1,0 +1,15 @@
+# Basic
+
+favicon: /favicon.svg
+logo: /favicon.svg
+
+navlink:
+    internal:
+        Blog: /
+        Archive: /archives/
+    external:
+        GitHub: https://github.com/XavierWah
+        Rss: /atom.xml
+
+# Copyright
+startyear: 2022

@@ -1,0 +1,27 @@
+{
+  "name": "hexo-theme-asclepius",
+  "version": "0.1.0-alpha.1",
+  "description": "A concise hexo theme developed from hexo-theme-apollo.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass source/scss/asclepius.scss source/css/asclepius.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XavierWah/hexo-theme-asclepius.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "asclepius"
+  ],
+  "author": "XavierWah",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/XavierWah/hexo-theme-asclepius/issues"
+  },
+  "homepage": "https://github.com/XavierWah/hexo-theme-asclepius#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

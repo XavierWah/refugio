@@ -1,0 +1,14 @@
+doctype html
+html(lang=config.language)
+    head
+        include head
+        include scripts
+    body
+        .wrap
+            header
+                include nav
+            main.container
+                block container
+            footer
+                block pagination
+                include copyright
