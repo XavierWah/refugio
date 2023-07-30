@@ -12,6 +12,7 @@
     "version": "5.4.2"
   },
   "dependencies": {
+    "fontmin": "^0.9.9",
     "hexo": "^5.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
