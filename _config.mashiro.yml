@@ -28,7 +28,7 @@ show_count: true
 recent_posts_limits: 5
 
 
-favicon: /img/favicon.ico
+favicon: /img/favicon.png
 # rss: /atom.xml
 
 # valine comment system. https://valine.js.org
