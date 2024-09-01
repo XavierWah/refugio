@@ -73,5 +73,5 @@ scanFolder("docs", (n, results) => {
     "./docs/css/fonts/FZHTJW.ttf",
     "./out"
   );
-  console.log("共生成：" + Array.from(charset).length + "个字符");
+  console.log("fontmin.js > Generated " + Array.from(charset).length + " characters.");
 });
